@@ -479,6 +479,22 @@ section { position: relative; padding: clamp(4rem, 10vw, 8rem) 0; }
 .taller-franja { display: grid; justify-items: center; gap: 1.2rem; text-align: center; padding: 3rem 0 4rem; position: relative; z-index: 2; }
 .taller-franja p { margin: 0; font-family: var(--f-tit); font-weight: 700; font-size: 1.4rem; letter-spacing: .04em; color: rgba(245, 241, 220, .85); }
 
+/* ---------- S6b · Galería del taller (fotos del cliente) ---------- */
+.galeria { padding-top: clamp(4rem, 9vw, 7rem); position: relative; z-index: 2; }
+.galeria .enc-sec { margin-bottom: clamp(1.6rem, 4vw, 3rem); }
+.galeria h2 { text-wrap: balance; }
+.galeria-filas { display: grid; gap: .6rem; }
+.galeria-fila { display: grid; grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+.g-foto { margin: 0; position: relative; overflow: hidden; border-radius: 14px; background: var(--verde-m); box-shadow: 0 0 0 1px rgba(245, 241, 220, .1); }
+.g-foto img { display: block; width: 100%; height: auto; transition: transform .8s var(--ease); }
+.g-ancha { grid-column: 1 / -1; }
+@media (hover: hover) { .g-foto:hover img { transform: scale(1.04); } }
+@media (min-width: 768px) {
+  .galeria-filas { gap: .8rem; }
+  .galeria-fila { display: flex; gap: .8rem; }
+  .g-foto { flex-grow: var(--ar); flex-shrink: 1; flex-basis: 0; min-width: 0; }
+}
+
 .js-ok.pinear .taller .pin { height: 260vh; }
 .js-ok.pinear .taller .pin-in.taller-in { position: sticky; top: 0; height: 100svh; min-height: 0; }
 .js-ok.pinear .taller-tit { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
