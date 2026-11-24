@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.classList.add('js');</script>
+<title>Motors Companies | Taller de motos en Querétaro</title>
+<meta name="description" content="Reparación y mantenimiento de motocicletas en Querétaro. Taller Motors Companies en Av. de las Fuentes 2243, Fundadores. Lunes a sábado. Agenda por WhatsApp.">
+<meta name="theme-color" content="#07140E">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/logo-emblema.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Motors Companies">
+<meta property="og:title" content="Motors Companies | Taller de motos en Querétaro">
+<meta property="og:description" content="Reparación y mantenimiento de motocicletas en Querétaro. Somos tu mejor opción.">
+<meta property="og:image" content="assets/img/logo-banner.jpg">
+<meta property="og:image:alt" content="Lona del taller Motors Companies con velocímetro en llamas y piloto con casco">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Motors Companies | Taller de motos en Querétaro">
+<meta name="twitter:description" content="Reparación y mantenimiento de motocicletas en Querétaro. Agenda por WhatsApp.">
+<meta name="twitter:image" content="assets/img/logo-banner.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Saira+Extra+Condensed:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Motors Companies",
+  "slogan": "Somos tu mejor opción",
+  "description": "Taller de motos en Querétaro: reparación y mantenimiento de motocicletas.",
+  "image": "assets/img/logo-banner.jpg",
+  "telephone": "+524425864565",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. de las Fuentes #2243, Col. Fundadores",
+    "addressLocality": "Querétaro",
+    "addressRegion": "Querétaro",
+    "postalCode": "76117",
+    "addressCountry": "MX"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Qué servicios ofrece Motors Companies?", "acceptedAnswer": { "@type": "Answer", "text": "Reparación y mantenimiento de motocicletas. Si no estás seguro de lo que necesita la tuya, escríbenos y te orientamos." } },
+    { "@type": "Question", "name": "¿Dónde está el taller?", "acceptedAnswer": { "@type": "Answer", "text": "Av. de las Fuentes #2243, Col. Fundadores, C.P. 76117, Querétaro, Qro." } },
+    { "@type": "Question", "name": "¿Qué horario tienen?", "acceptedAnswer": { "@type": "Answer", "text": "Lunes a viernes de 10:00 a 18:00 h y sábados de 10:00 a 14:00 h." } },
+    { "@type": "Question", "name": "¿Cómo pido mi servicio?", "acceptedAnswer": { "@type": "Answer", "text": "Escríbenos por WhatsApp o llena el formulario de esta página: abrimos la conversación con tus datos ya listos." } },
+    { "@type": "Question", "name": "¿Qué me conviene tener a la mano?", "acceptedAnswer": { "@type": "Answer", "text": "Marca y modelo de tu moto, año aproximado y qué notas raro. Con eso te orientamos mejor." } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ CARGADOR · IGNICIÓN ============ -->
+<div id="cargador" role="status" aria-live="polite" aria-label="Cargando Motors Companies">
+  <div class="persiana persiana-t"></div>
+  <div class="persiana persiana-b"></div>
+  <div class="carga-centro">
+    <div class="carga-anillo">
+      <svg viewBox="0 0 160 160" aria-hidden="true">
+        <defs>
+          <linearGradient id="gCarga" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#E3D43B"/><stop offset="1" stop-color="#2FE0BE"/>
+          </linearGradient>
+        </defs>
+        <circle cx="80" cy="80" r="70" fill="none" stroke="rgba(245,241,220,.1)" stroke-width="4"/>
+        <circle id="cargaArco" cx="80" cy="80" r="70" fill="none" stroke="url(#gCarga)" stroke-width="4" stroke-linecap="round" stroke-dasharray="439.8" stroke-dashoffset="439.8" transform="rotate(-90 80 80)"/>
+        <g id="cargaAguja"><circle cx="80" cy="10" r="4.5" fill="#F2E96B"/></g>
+      </svg>
+      <img src="assets/logo-emblema.jpg" alt="Emblema de Motors Companies" width="120" height="120">
+    </div>
+    <div class="carga-num" id="cargaNum" aria-hidden="true">000</div>
+    <p class="carga-txt" id="cargaTxt">CALENTANDO MOTOR…</p>
+  </div>
+</div>
+
+<div class="barra-progreso" id="barraProgreso" aria-hidden="true"></div>
+<div class="grano" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span>VAMOS</span></div>
+
+<!-- ============ HUD DE MARCHA ============ -->
+<aside class="hud" id="hud" aria-hidden="true">
+  <ol class="hud-marchas" id="hudMarchas">
+    <li class="on">N</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>
+  </ol>
+  <div class="hud-vel"><b id="hudVel">0</b><small>km/h</small></div>
+  <div class="hud-redline" id="hudRed">REDLINE</div>
+</aside>
+<div class="chip-marcha" id="chipMarcha" aria-hidden="true"><span id="chipG">N</span> · <span id="chipV">0</span> km/h</div>
+
+<!-- ============ ENCABEZADO ============ -->
+<header class="cabecera" id="cabecera">
+  <a class="marca" href="#inicio" aria-label="Motors Companies, ir al inicio">
+    <img src="assets/logo-emblema.jpg" alt="" width="38" height="38">
+    <span class="marca-txt">MOTORS <em>COMPANIES</em></span>
+  </a>
+  <nav class="nav-desk" aria-label="Principal">
+    <a href="#servicios">Servicios</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#taller">El taller</a>
+    <a href="#ubicacion">Horario</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="btn btn-prim btn-mini" data-wa data-wa-msg="Hola Motors Companies, quiero agendar un servicio para mi moto." href="#contacto"><span>Agendar mi servicio</span></a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menuMovil" aria-label="Abrir menú"><i></i><i></i><i></i></button>
+</header>
+
+<div class="menu-movil" id="menuMovil" aria-hidden="true">
+  <nav aria-label="Menú móvil">
+    <a href="#servicios" style="--i:0"><small>01</small>Servicios</a>
+    <a href="#proceso" style="--i:1"><small>02</small>Proceso</a>
+    <a href="#taller" style="--i:2"><small>03</small>El taller</a>
+    <a href="#ubicacion" style="--i:3"><small>04</small>Horario</a>
+    <a href="#contacto" style="--i:4"><small>05</small>Contacto</a>
+  </nav>
+  <div class="menu-pie">
+    <a class="btn btn-prim" data-wa data-wa-msg="Hola Motors Companies, quiero agendar un servicio para mi moto." href="#contacto"><span>Agendar mi servicio</span></a>
+    <p>Lun–Vie 10:00–18:00 · Sáb 10:00–14:00</p>
+  </div>
+</div>
+
+<main class="pagina" id="pagina">
+
+<!-- ============ S1 · HERO ============ -->
+<section class="hero" id="inicio" data-marcha="0" aria-labelledby="h1">
+  <div class="hero-fondo" aria-hidden="true">
+    <div class="estelas" id="estelas"></div>
+    <div class="carretera"><div class="plano"></div></div>
+  </div>
+
+  <div class="hero-grid">
+    <div class="hero-texto" id="heroTexto">
+      <p class="eyebrow">Taller de motos · Querétaro</p>
+      <h1 id="h1">
+        <span class="linea"><span>Tu moto,</span></span>
+        <span class="linea"><span class="oro shimmer-txt">siempre lista</span></span>
+        <span class="linea"><span>para rodar.</span></span>
+      </h1>
+      <p class="sub">Reparación y mantenimiento de motocicletas en Querétaro. Revisamos, te explicamos y la dejamos lista para el camino.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-prim magnetico" data-wa data-wa-msg="Hola Motors Companies, quiero agendar un servicio para mi moto." href="#contacto"><span>Quiero agendar mi servicio</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-sec" href="#proceso"><span>Ver cómo trabajamos</span></a>
+      </div>
+      <p class="micro"><i class="punto" aria-hidden="true"></i><span>Lun–Vie 10:00–18:00 · Sáb 10:00–14:00</span><b id="heroEstado"></b></p>
+    </div>
+
+    <div class="dial-zona">
+      <div class="dial-scroll" id="dialScroll">
+        <div class="dial-tilt" id="dialTilt">
+          <div class="dial-sway">
+            <div class="dial" id="dial">
+              <div class="capa capa-radar" aria-hidden="true"></div>
+              <svg class="capa capa-dial" id="dialSvg" viewBox="0 0 600 600" aria-hidden="true">
+                <defs>
+                  <linearGradient id="gArco" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E3D43B"/><stop offset="1" stop-color="#2FE0BE"/></linearGradient>
+                  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                </defs>
+                <circle class="anillo-punt" cx="300" cy="300" r="292" fill="none" stroke="rgba(227,212,59,.35)" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/>
+                <circle cx="300" cy="300" r="270" fill="rgba(7,20,14,.55)" stroke="rgba(227,212,59,.18)" stroke-width="2"/>
+                <g id="dialMarcas"></g>
+              </svg>
+              <canvas class="capa capa-brasas" id="brasas" aria-hidden="true"></canvas>
+              <div class="emblema-dial capa"><img src="assets/logo-emblema.jpg" alt="Emblema de Motors Companies: piloto con casco frente a un velocímetro" width="240" height="240"></div>
+              <svg class="capa capa-aguja" viewBox="0 0 600 600" aria-hidden="true">
+                <g id="agujaHero" filter="url(#glow)" transform="rotate(135 300 300)">
+                  <path d="M300 296 L52 300 L300 304 L316 300 Z" fill="#F2E96B"/>
+                  <path d="M300 298 L120 300 L300 302Z" fill="#fff" opacity=".6"/>
+                </g>
+                <circle cx="300" cy="300" r="14" fill="#07140E" stroke="#E3D43B" stroke-width="4"/>
+                <circle cx="300" cy="300" r="5" fill="#E3D43B"/>
+              </svg>
+              <div class="lectura capa" aria-hidden="true">
+                <div><b id="lecRpm">1.4</b><small>RPM ×1000</small></div>
+                <div><b id="lecKmh">29</b><small>km/h</small></div>
+              </div>
+              <span class="chip-vidrio c1">Reparaciones</span>
+              <span class="chip-vidrio c2">Mantenimiento</span>
+              <span class="chip-vidrio c3">Querétaro, Qro.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pista" aria-hidden="true"><i></i><span>DESLIZA</span></div>
+</section>
+
+<!-- ============ S2 · TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="banda banda-oro" data-marquee data-dir="-1" data-vel="70">
+    <div class="pista-m"><div class="grupo"><span>REPARACIONES</span><i>✦</i><span>MANTENIMIENTO</span><i>✦</i><span>SOMOS TU MEJOR OPCIÓN</span><i>✦</i><span>QUERÉTARO</span><i>✦</i></div></div>
+  </div>
+  <div class="banda banda-verde" data-marquee data-dir="1" data-vel="55">
+    <div class="pista-m"><div class="grupo"><span>MOTORS COMPANIES</span><i>✦</i><span>TU MOTO, SIEMPRE LISTA PARA RODAR</span><i>✦</i><span>TALLER DE MOTOS</span><i>✦</i></div></div>
+  </div>
+</div>
+
+<!-- ============ S3 · MANIFIESTO ============ -->
+<section class="manifiesto" id="manifiesto" data-marcha="1" aria-labelledby="hManif">
+  <div class="manif-borde" aria-hidden="true"></div>
+  <div class="manif-fondo" aria-hidden="true">
+    <div class="palabra-gigante" id="palGig">MOTORS</div>
+    <svg class="engranaje-g" id="engManif" viewBox="0 0 200 200"><use href="#icoEngranaje"/></svg>
+  </div>
+  <div class="contenedor">
+    <p class="eyebrow eyebrow-tinta" data-reveal>Primera marcha</p>
+    <h2 id="hManif" class="manif-txt" data-palabras><strong>Una moto no es solo transporte.</strong> Es tu salida, tu ruta, tu forma de llegar. Por eso en Motors Companies <strong>cuidamos cada tuerca como si fuera nuestra</strong>.</h2>
+    <div data-reveal style="--i:1">
+      <a class="btn btn-tinta" data-wa data-wa-msg="Hola Motors Companies, quiero que mi moto esté en buenas manos." href="#contacto"><span>Quiero que mi moto esté en buenas manos</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S4 · SERVICIOS ============ -->
+<section class="servicios" id="servicios" data-marcha="2" aria-labelledby="hServ">
+  <div class="contenedor">
+    <header class="enc-sec" data-reveal>
+      <p class="eyebrow">Servicios</p>
+      <h2 id="hServ"><span class="oro">Dos servicios.</span> Una obsesión: que rindas.</h2>
+      <p class="lead">Todo lo que tu moto necesita para arrancar, frenar y volver a la calle sin sorpresas.</p>
+    </header>
+
+    <div class="pila" id="pila">
+      <article class="tarjeta t-oro" style="--n:0">
+        <div class="vela" aria-hidden="true"></div>
+        <span class="numeral" aria-hidden="true">01</span>
+        <svg class="eng-t" viewBox="0 0 200 200" aria-hidden="true"><use href="#icoEngranaje"/></svg>
+        <div class="t-visual">
+          <div class="marco"><img src="assets/img/moto-tablero.jpg" alt="Tablero de una motocicleta con luces encendidas durante una revisión" width="330" height="206" loading="lazy" style="object-position:50% 40%"></div>
+        </div>
+        <div class="t-texto">
+          <p class="eyebrow eyebrow-tinta">01 · Reparaciones</p>
+          <h3>Reparaciones que la devuelven a la calle</h3>
+          <p>Cuando algo falla no adivinamos: revisamos, te explicamos y lo resolvemos con cuidado. Tu moto sale lista para el camino, no para la siguiente falla.</p>
+          <ul class="lista">
+            <li>Diagnóstico claro, sin rodeos</li>
+            <li>Trabajo hecho con atención al detalle</li>
+            <li>Te avisamos cuando está lista</li>
+          </ul>
+          <a class="btn btn-tinta" data-wa data-wa-msg="Hola Motors Companies, quiero que revisen mi moto." href="#contacto"><span>Quiero que revisen mi moto</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <article class="tarjeta t-verde" style="--n:1">
+        <div class="vela" aria-hidden="true"></div>
+        <span class="numeral" aria-hidden="true">02</span>
+        <svg class="eng-t" viewBox="0 0 200 200" aria-hidden="true"><use href="#icoEngranaje"/></svg>
+        <div class="t-visual">
+          <div class="marco"><img src="assets/img/llantas.jpg" alt="Llantas de motocicleta en el taller listas para revisión" width="330" height="206" loading="lazy" style="object-position:50% 50%"></div>
+        </div>
+        <div class="t-texto">
+          <p class="eyebrow">02 · Mantenimiento de unidades</p>
+          <h3>Mantenimiento que cuida tu inversión</h3>
+          <p>Una moto bien mantenida enciende mejor, frena mejor y dura más. Agenda su revisión antes de que el problema te encuentre a ti.</p>
+          <ul class="lista">
+            <li>Revisión preventiva periódica</li>
+            <li>Cuidado de las piezas que más trabajan</li>
+            <li>Recomendaciones para tu uso diario</li>
+          </ul>
+          <a class="btn btn-prim" data-wa data-wa-msg="Hola Motors Companies, quiero el mantenimiento de mi moto." href="#contacto"><span>Quiero su mantenimiento</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <article class="tarjeta t-negra" style="--n:2">
+        <div class="vela" aria-hidden="true"></div>
+        <span class="numeral" aria-hidden="true">03</span>
+        <div class="t-visual">
+          <div class="osciloscopio" aria-hidden="true">
+            <svg viewBox="0 0 400 160" preserveAspectRatio="none">
+              <defs><pattern id="rejilla" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(47,224,190,.14)" stroke-width="1"/></pattern></defs>
+              <rect width="400" height="160" fill="url(#rejilla)"/>
+              <path d="M0 80H400" stroke="rgba(47,224,190,.25)" stroke-dasharray="4 6"/>
+              <path id="ondaMotor" d="M0 80 L400 80" fill="none" stroke="#E3D43B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 6px rgba(227,212,59,.8))"/>
+            </svg>
+          </div>
+        </div>
+        <div class="t-texto">
+          <p class="eyebrow">03 · A tu medida</p>
+          <h3>¿No sabes qué tiene tu moto?</h3>
+          <p>Cuéntanos cómo se comporta y te orientamos por WhatsApp. Sin tecnicismos.</p>
+          <a class="btn btn-prim" data-wa data-wa-msg="Hola Motors Companies, quiero contarles cómo se comporta mi moto para que me orienten." href="#contacto"><span>Cuéntale al taller qué siente tu moto</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S5 · PROCESO (pin) ============ -->
+<section class="proceso" id="proceso" data-marcha="3" aria-labelledby="hProc">
+  <div class="pin" id="pinProceso">
+    <div class="pin-in">
+      <div class="proc-cab">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2 id="hProc">Del primer mensaje a la primera aceleración.</h2>
+      </div>
+      <div class="proc-grid">
+        <div class="proc-dial" id="procDial">
+          <svg viewBox="0 0 600 600" aria-hidden="true" id="procSvg">
+            <circle cx="300" cy="300" r="292" fill="none" stroke="rgba(227,212,59,.3)" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/>
+            <circle cx="300" cy="300" r="270" fill="rgba(7,20,14,.6)" stroke="rgba(227,212,59,.2)" stroke-width="2"/>
+            <g id="procMarcas"></g>
+            <path id="procArco" fill="none" stroke="url(#gArco)" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+          <div class="proc-foto"><div class="foto-clip" id="fotoClip"><img src="assets/img/tablero-piloto.jpg" alt="Piloto con casco frente a un tablero de moto en llamas doradas" width="400" height="400" loading="lazy"></div></div>
+          <svg class="proc-aguja" viewBox="0 0 600 600" aria-hidden="true">
+            <g id="agujaProc" filter="url(#glow)" transform="rotate(405 300 300)">
+              <path d="M300 296 L52 300 L300 304 L316 300 Z" fill="#F2E96B"/>
+            </g>
+            <circle cx="300" cy="300" r="12" fill="#07140E" stroke="#E3D43B" stroke-width="4"/>
+          </svg>
+          <div class="proc-flash" id="procFlash" aria-hidden="true"></div>
+          <div class="proc-vel" aria-hidden="true"><b id="procKmh">240</b><small>km/h</small></div>
+        </div>
+        <div class="proc-pasos">
+          <div class="riel" aria-hidden="true"><i id="rielLleno"></i></div>
+          <ol id="pasos">
+            <li class="paso on"><span class="p-num">01</span><div><h3>Escríbenos</h3><p>Cuéntanos por WhatsApp qué le pasa o qué necesita tu moto.</p></div></li>
+            <li class="paso on"><span class="p-num">02</span><div><h3>Diagnóstico</h3><p>Revisamos tu unidad y te explicamos con claridad lo que encontramos.</p></div></li>
+            <li class="paso on"><span class="p-num">03</span><div><h3>Manos a la obra</h3><p>Reparamos o damos mantenimiento con cuidado y atención al detalle.</p></div></li>
+            <li class="paso on"><span class="p-num">04</span><div><h3>Lista para rodar</h3><p>Te avisamos que tu moto está lista. Tú solo acelera.</p></div></li>
+          </ol>
+          <div class="puntos" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="proc-cta" id="procCta">
+            <a class="btn btn-prim" data-wa data-wa-msg="Hola Motors Companies, estoy listo para agendar el servicio de mi moto." href="#contacto"><span>Estoy listo, empecemos</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S6 · EL TALLER ============ -->
+<section class="taller" id="taller" data-marcha="4" aria-labelledby="hTaller">
+  <div class="pin" id="pinTaller">
+    <div class="pin-in taller-in">
+      <figure class="taller-fig">
+        <div class="media-clip" id="mediaClip">
+          <img id="tallerImg" src="assets/img/taller-completo.jpg" alt="Interior del taller Motors Companies con la lona de la marca, llantas y una moto en reparación" width="1600" height="1200" loading="lazy">
+          <div class="velo-taller" aria-hidden="true"></div>
+        </div>
+        <button class="hotspot" style="--x:13%;--y:62%" aria-expanded="false"><i></i><span>Zona de llantas</span></button>
+        <button class="hotspot" style="--x:50%;--y:30%" aria-expanded="false"><i></i><span>Nuestra lona: el tablero que nos define</span></button>
+        <button class="hotspot" style="--x:88%;--y:80%" aria-expanded="false"><i></i><span>Una unidad en el taller</span></button>
+      </figure>
+      <div class="taller-tit" id="tallerTit">
+        <h2 id="hTaller"><span class="oro">Aquí se trabaja.</span> Aquí se cuida tu moto.</h2>
+        <p>Un taller real, con la lona que nos identifica y tu moto como prioridad.</p>
+      </div>
+    </div>
+  </div>
+  <div class="taller-franja contenedor">
+    <p data-reveal>Pronto: más fotos de nuestros trabajos.</p>
+    <a class="btn btn-prim" data-reveal style="--i:1" data-wa data-wa-msg="Hola Motors Companies, quiero ver mi moto en su taller." href="#contacto"><span>Quiero ver mi moto en este taller</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+
+<!-- ============ S7 · MARCA ============ -->
+<section class="marca-sec" id="marca" data-marcha="5" aria-labelledby="hMarca">
+  <div class="contenedor marca-grid">
+    <div class="marca-txt-col">
+      <p class="eyebrow eyebrow-tinta" data-reveal>Nuestro lema</p>
+      <h2 id="hMarca" data-reveal style="--i:1"><span class="verde">Somos tu mejor opción.</span> Y lo demostramos en cada servicio.</h2>
+      <ul class="valores">
+        <li data-reveal="left" style="--i:1"><span>1</span><div><h3>Claridad</h3><p>Te explicamos lo que tiene tu moto con palabras que se entienden.</p></div></li>
+        <li data-reveal="left" style="--i:2"><span>2</span><div><h3>Cuidado</h3><p>Cada unidad se trata como si fuera la nuestra.</p></div></li>
+        <li data-reveal="left" style="--i:3"><span>3</span><div><h3>Compromiso</h3><p>Tu moto vuelve a la calle lista para rodar.</p></div></li>
+      </ul>
+    </div>
+    <div class="marca-card-col" data-reveal="zoom">
+      <div class="card3d" id="card3d">
+        <div class="card3d-borde">
+          <div class="card3d-int">
+            <img src="assets/img/logo-banner.jpg" alt="Lona de Motors Companies: velocímetro en llamas doradas y piloto con casco sobre fondo verde" width="1000" height="848" loading="lazy">
+            <span class="reflejo" id="reflejo" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S8 · TESTIGOS ============ -->
+<section class="testigos" id="testigos" data-marcha="5" aria-labelledby="hTest">
+  <div class="contenedor">
+    <header class="enc-sec" data-reveal>
+      <p class="eyebrow">Autodiagnóstico</p>
+      <h2 id="hTest">¿Qué te está <span class="oro">diciendo</span> tu moto?</h2>
+      <p class="lead">Toca las luces que se parecen a lo que sientes. Armamos el mensaje por ti.</p>
+    </header>
+    <div class="test-grid">
+      <div class="panel-tablero" data-reveal>
+        <div class="luces" id="luces" role="group" aria-label="Luces testigo de tu moto">
+          <button type="button" class="testigo" data-s="Le cuesta arrancar" style="--c:#FFB020" aria-pressed="false"><i></i><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 16h32v20H8zM14 16v-4h6v4M28 16v-4h6v4M17 26h6m-3-3v6m11-3h6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Batería</span><small>Le cuesta arrancar</small></button>
+          <button type="button" class="testigo" data-s="Hace ruidos extraños" style="--c:#FF4D3D" aria-pressed="false"><i></i><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 20h6v-4h8v-4h12v4h4l4 4v10h-4v4H14v-4H6zM44 22v8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Motor</span><small>Hace ruidos extraños</small></button>
+          <button type="button" class="testigo" data-s="Frena diferente" style="--c:#FF4D3D" aria-pressed="false"><i></i><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="9" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M8 14a20 20 0 0 0 0 20M40 14a20 20 0 0 1 0 20M24 21v4m0 3v1" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg><span>Freno</span><small>Frena diferente</small></button>
+          <button type="button" class="testigo" data-s="Pierde aceite o echa humo" style="--c:#FFB020" aria-pressed="false"><i></i><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 22l9 2 20-8 4 4-6 3 6 3v6H14l-6-6zM40 30c2 3 4 5 4 7a4 4 0 0 1-8 0c0-2 2-4 4-7z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Aceite</span><small>Pierde aceite o echa humo</small></button>
+          <button type="button" class="testigo" data-s="Se siente inestable" style="--c:#2FE0BE" aria-pressed="false"><i></i><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="24" cy="24" r="5" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M24 8v11M24 29v11M8 24h11M29 24h11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg><span>Llanta</span><small>Se siente inestable</small></button>
+          <button type="button" class="testigo" data-s="Ya le toca revisión" style="--c:#2FE0BE" aria-pressed="false"><i></i><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M24 24h18m-6 0v7m-6-7v5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Llave</span><small>Ya le toca revisión</small></button>
+        </div>
+      </div>
+      <div class="resumen" data-reveal style="--i:1">
+        <h3>Resumen de tu moto</h3>
+        <ul id="resLista" aria-live="polite"><li class="vacio">Aún no marcas ninguna luz.</li></ul>
+        <label for="resModelo">¿Qué moto tienes? (marca y modelo)</label>
+        <input type="text" id="resModelo" name="modelo" autocomplete="off" placeholder="Ej. Italika FT150">
+        <a class="btn btn-prim" id="resEnviar" data-wa href="#contacto"><span>Mandar este diagnóstico por WhatsApp</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <p class="nota">Son síntomas generales para orientarte; el diagnóstico real lo hacemos en el taller.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S9 · UBICACIÓN ============ -->
+<section class="ubicacion" id="ubicacion" data-marcha="6" aria-labelledby="hUbi">
+  <div class="contenedor">
+    <header class="enc-sec" data-reveal>
+      <p class="eyebrow">Ubicación y horario</p>
+      <h2 id="hUbi">Ven al taller. <span class="oro">Te esperamos en Fundadores.</span></h2>
+    </header>
+    <div class="ubi-grid">
+      <div class="ubi-card" data-reveal>
+        <div class="estado" id="estadoTaller"><i></i><span>Revisando horario…</span></div>
+        <address>Av. de las Fuentes #2243,<br>Col. Fundadores, C.P. 76117,<br>Querétaro, Qro.</address>
+        <table class="horario" aria-label="Horario del taller">
+          <tbody>
+            <tr data-dia="1,2,3,4,5" data-reveal="left" style="--i:1"><th scope="row">Lunes a viernes</th><td>10:00 – 18:00</td></tr>
+            <tr data-dia="6" data-reveal="left" style="--i:2"><th scope="row">Sábado</th><td>10:00 – 14:00</td></tr>
+            <tr data-dia="0" data-reveal="left" style="--i:3"><th scope="row">Domingo</th><td>Cerrado</td></tr>
+          </tbody>
+        </table>
+        <div class="ubi-btns">
+          <a class="btn btn-prim" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+de+las+Fuentes+2243+Fundadores+76117+Quer%C3%A9taro" target="_blank" rel="noopener"><span>Cómo llegar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn-sec" data-wa data-wa-msg="Hola Motors Companies, voy en camino al taller." href="#contacto"><span>Avísanos que vas en camino</span></a>
+        </div>
+      </div>
+      <div class="mapa" data-reveal="right">
+        <div class="mapa-marco">
+          <iframe title="Mapa de Google con la ubicación del taller Motors Companies en Av. de las Fuentes 2243, Fundadores, Querétaro" src="https://www.google.com/maps?q=Av.+de+las+Fuentes+2243,+Fundadores,+76117+Quer%C3%A9taro&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <span class="ping" aria-hidden="true"></span>
+        </div>
+        <a class="mapa-enlace" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+de+las+Fuentes+2243+Fundadores+76117+Quer%C3%A9taro" target="_blank" rel="noopener">¿No carga el mapa? Ábrelo en Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S10 · FAQ ============ -->
+<section class="faq" id="faq" aria-labelledby="hFaq">
+  <div class="contenedor faq-in">
+    <h2 id="hFaq" data-reveal><span class="verde">Lo que más nos preguntan.</span></h2>
+    <div class="acordeon">
+      <details data-reveal style="--i:0"><summary><span>¿Qué servicios ofrece Motors Companies?</span><i aria-hidden="true"></i></summary><div class="resp"><p>Reparación y mantenimiento de motocicletas. Si no estás seguro de lo que necesita la tuya, escríbenos y te orientamos.</p></div></details>
+      <details data-reveal style="--i:1"><summary><span>¿Dónde está el taller?</span><i aria-hidden="true"></i></summary><div class="resp"><p>Av. de las Fuentes #2243, Col. Fundadores, C.P. 76117, Querétaro, Qro.</p></div></details>
+      <details data-reveal style="--i:2"><summary><span>¿Qué horario tienen?</span><i aria-hidden="true"></i></summary><div class="resp"><p>Lunes a viernes de 10:00 a 18:00 h y sábados de 10:00 a 14:00 h.</p></div></details>
+      <details data-reveal style="--i:3"><summary><span>¿Cómo pido mi servicio?</span><i aria-hidden="true"></i></summary><div class="resp"><p>Escríbenos por WhatsApp o llena el formulario de esta página: abrimos la conversación con tus datos ya listos.</p></div></details>
+      <details data-reveal style="--i:4"><summary><span>¿Qué me conviene tener a la mano?</span><i aria-hidden="true"></i></summary><div class="resp"><p>Marca y modelo de tu moto, año aproximado y qué notas raro. Con eso te orientamos mejor.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S11 · CONTACTO ============ -->
+<section class="contacto" id="contacto" data-marcha="6" aria-labelledby="hCont">
+  <div class="leds" id="leds" aria-hidden="true"></div>
+  <div class="contenedor cont-grid">
+    <div class="cont-txt">
+      <h2 id="hCont" data-reveal><strong>Tu próxima ruta empieza con un mensaje.</strong></h2>
+      <p class="lead" data-reveal style="--i:1">Cuéntanos qué necesita tu moto. Se abre WhatsApp con todo listo; sin compromiso.</p>
+    </div>
+    <form class="form" id="form" novalidate data-reveal="up" style="--i:1">
+      <svg class="mini-gauge" viewBox="0 0 120 70" aria-hidden="true">
+        <path d="M10 62A50 50 0 0 1 110 62" fill="none" stroke="rgba(245,241,220,.18)" stroke-width="6" stroke-linecap="round"/>
+        <path d="M10 62A50 50 0 0 1 110 62" fill="none" stroke="#E3D43B" stroke-width="6" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="100" id="miniArco"/>
+        <g id="miniAguja" transform="rotate(-70 60 62)"><path d="M60 62 L60 20" stroke="#F2E96B" stroke-width="3" stroke-linecap="round"/></g>
+        <circle cx="60" cy="62" r="5" fill="#E3D43B"/>
+      </svg>
+      <div class="campo">
+        <label for="fNombre">Nombre <span aria-hidden="true">*</span></label>
+        <input type="text" id="fNombre" name="nombre" autocomplete="name" required aria-describedby="fError" placeholder="¿Cómo te llamas?">
+      </div>
+      <div class="campo">
+        <label for="fMoto">¿Qué moto tienes? (marca y modelo)</label>
+        <input type="text" id="fMoto" name="moto" autocomplete="off" placeholder="Ej. Italika FT150">
+      </div>
+      <fieldset class="campo chips">
+        <legend>¿Qué necesitas?</legend>
+        <label><input type="radio" name="necesito" value="Reparación" checked><span>Reparación</span></label>
+        <label><input type="radio" name="necesito" value="Mantenimiento"><span>Mantenimiento</span></label>
+        <label><input type="radio" name="necesito" value="No estoy seguro"><span>No estoy seguro</span></label>
+      </fieldset>
+      <div class="campo">
+        <label for="fMsg">Cuéntanos más (opcional)</label>
+        <textarea id="fMsg" name="mensaje" rows="3" placeholder="Qué notas raro, desde cuándo…"></textarea>
+      </div>
+      <p class="error" id="fError" role="alert" aria-live="assertive"></p>
+      <button type="submit" class="btn btn-prim btn-bloque" id="fEnviar"><span>Mandar mi solicitud por WhatsApp</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <noscript><p class="error" style="display:block">Activa JavaScript para enviar el formulario, o escríbenos al 442 586 4565.</p></noscript>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ S12 · PIE ============ -->
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-top">
+      <div class="pie-logo"><img src="assets/img/logo-wordmark.jpg" alt="Motors Companies, somos tu mejor opción" width="420" height="160" loading="lazy"></div>
+      <div class="pie-cols">
+        <nav aria-label="Pie de página"><h3>Navegación</h3>
+          <a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#taller">El taller</a><a href="#ubicacion">Horario</a><a href="#faq">Preguntas</a><a href="#contacto">Contacto</a>
+        </nav>
+        <div><h3>Taller</h3><address>Av. de las Fuentes #2243,<br>Col. Fundadores, C.P. 76117,<br>Querétaro, Qro.</address></div>
+        <div><h3>Horario</h3><p>Lun–Vie 10:00–18:00<br>Sábado 10:00–14:00<br>Domingo cerrado</p></div>
+        <div><h3>Contacto</h3><a href="tel:+524425864565">442 586 4565</a><a data-wa data-wa-msg="Hola Motors Companies, quiero información sobre sus servicios." href="#contacto">WhatsApp</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="pie-marq" aria-hidden="true" data-marquee data-dir="-1" data-vel="40">
+    <div class="pista-m"><div class="grupo"><span>MOTORS COMPANIES</span><i>✦</i><span>SOMOS TU MEJOR OPCIÓN</span><i>✦</i></div></div>
+  </div>
+  <div class="contenedor pie-fin">
+    <p>© 2026 Motors Companies. Querétaro, México.</p>
+    <button type="button" class="btn btn-sec btn-mini" id="arriba"><span>Volver al arranque (N)</span></button>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOTANTE ============ -->
+<a class="wa-flotante" id="waFlot" data-wa data-wa-msg="Hola Motors Companies, quiero información sobre sus servicios." href="#contacto" aria-label="Escribir por WhatsApp a Motors Companies" target="_blank" rel="noopener">
+  <span class="wa-label" id="waLabel">¿Hablamos?</span>
+  <span class="wa-boton"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.600L3 29l7.100-2.100a12.800 12.800 0 0 0 5.900 1.400c7 0 12.700-5.600 12.700-12.500S23 3 16 3zm0 22.700c-1.900 0-3.800-.5-5.400-1.500l-.4-.2-4.200 1.200 1.200-4-.3-.4a10 10 0 0 1-1.600-5.300C5.300 10 10.100 5.400 16 5.400s10.700 4.600 10.700 10.300S21.900 25.700 16 25.700zm5.900-7.600c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.700 8.700 0 0 1-4.300-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5s-.7-1.700-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400s-1.200 1.100-1.200 2.800 1.200 3.200 1.400 3.400 2.400 3.700 5.800 5.100c2.100.9 2.900.9 4 .8.600-.1 1.900-.8 2.200-1.500s.3-1.400.2-1.500-.3-.2-.6-.4z"/></svg></span>
+</a>
+
+<!-- Símbolo reutilizable: engranaje -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="icoEngranaje" viewBox="0 0 200 200">
+      <path fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" d="M88 10h24l4 20 14 6 17-12 17 17-12 17 6 14 20 4v24l-20 4-6 14 12 17-17 17-17-12-14 6-4 20H88l-4-20-14-6-17 12-17-17 12-17-6-14-20-4V88l20-4 6-14-12-17 17-17 17 12 14-6z"/>
+      <circle cx="100" cy="100" r="30" fill="none" stroke="currentColor" stroke-width="5"/>
+      <circle cx="100" cy="100" r="9" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<script src="script.js" defer></script>
+</body>
+</html>
